@@ -306,11 +306,7 @@ const PlayerCheatSheet = () => {
             </p>
             <p className="border-bottom d-flex justify-content-center">
               <span className="big">DEX</span>
-              <span><strong>Desxtérité</strong> Agilité, réflexes, équilibre. </span>
-            </p>
-            <p className="border-bottom d-flex" style={{alignItems: 'center'}}>
-              <span className="big">DEX</span>
-              <span><strong>Desxtérité</strong> Agilité, réflexes, équilibre. </span>
+              <span><strong>Dextérité</strong> Agilité, réflexes, équilibre. </span>
             </p>
             <p className="border-bottom d-flex" style={{alignItems: 'center'}}>
               <span className="big">CON</span>
