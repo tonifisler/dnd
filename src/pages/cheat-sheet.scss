@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Metamorphous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900,400i&display=swap');
+
+:root {
+  --color-light: white;
+  --color-dark: black;
+  --color-danger: indianred;
+  --color-success: limegreen;
+  --color-gray: lightgray;
+  --color-dark-gray: darkgray;
+  --spacer: 1rem;
+  --sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-base: 'Merriweather', var(--sans-serif);
+  --font-family-headings: 'Metamorphous', var(--sans-serif);
+  --cols-nb: 5;
+  --grid-cols-nb: 3;
+
+  @media screen and (max-width: 768px) {
+    --cols-nb: 2;
+    --grid-cols-nb: 2;
+  }
+
+  @media screen and (max-width: 360px) {
+    --cols-nb: 1;
+    --grid-cols-nb: 1;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols-nb), 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  padding: var(--spacer);
+  font-family: var(--font-family-base);
+  page-break-after: always;
+}
+
+.grid-span {
+  grid-column: 1 / span var(--grid-cols-nb);
+}
+
+html {
+  font-size: 15px;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.title {
+  margin-bottom: 0.15em;
+  padding: 0.05em 0;
+  background-color: var(--color-dark);
+  font-size: 1.2rem;
+  font-family: var(--font-family-headings);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+
+.subtitle {
+  margin: 0.4em 0 0.1em 0;
+  font-size: 0.6rem;
+  background-color: var(--color-gray);
+  text-align: center;
+  font-weight: 900;
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+}
+
+p,
+ul,
+li {
+  margin-bottom: 0.25em;
+  font-size: 0.6rem;
+  line-height: 1.15;
+  hyphens: auto;
+}
+
+ul {
+  padding-left: 0.6rem;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  margin-bottom: 0;
+
+  &:before {
+    content: '•';
+    position: absolute;
+    margin-left: -0.5rem;
+  }
+}
+
+.border-bottom,
+.border-bottom-lg {
+  padding-bottom: 0.2em;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--color-dark-gray);
+}
+
+.border-bottom-lg {
+  border-bottom: 2px solid var(--color-dark);
+}
+
+.border-top-lg {
+  padding-top: 0.2rem;
+  border-top: 2px solid var(--color-dark);
+}
+
+.border-right-lg {
+  border-right: 2px solid var(--color-dark);
+}
+
+mark {
+  padding: 0;
+  font-size: 80%;
+  font-variant-numeric: ordinal;
+  font-family: var(--sans-serif);
+  letter-spacing: -1px;
+}
+
+.link-mark {
+  text-decoration: none;
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
+[class*=badge] {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: -0.3rem 0 -0.15rem;
+  border-radius: 100%;
+  font-family: var(--font-family-headings);
+  font-weight: 900;
+  font-size: 6px;
+  line-height: 1;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+}
+
+.badge-advantage {
+  background-color: var(--color-success);
+
+  &:after {
+    content: 'A';
+  }
+}
+
+.badge-disadvantage {
+  background-color: var(--color-danger);
+
+  &:after {
+    content: 'D';
+  }
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  border: 2px solid var(--color-gray);
+
+  &:not(.card-top) {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  p {
+    padding: 0 0.2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .border-bottom,
+  .border-bottom-lg {
+    border-color: var(--color-gray);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bg-gray {
+  background-color: var(--color-gray);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.cols {
+  columns: var(--cols-nb);
+
+  > * {
+    break-inside: avoid;
+  }
+}
+
+table {
+  width: 100%;
+  font-size: 0.6rem;
+  line-height: 1.15;
+}
+
+td {
+  padding: 0.1rem 0.2rem;
+}
+
+.big {
+  font-weight: 900;
+  font-size: 1rem;
+  padding-right: 0.4rem;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
