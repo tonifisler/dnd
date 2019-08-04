@@ -81,13 +81,13 @@ const PlayerCheatSheet = () => {
             <p><strong>Initiative</strong> Les combattants font un <Test ability="DEX" /> pour déterminer l'ordre des tours d'un round. Ajouter les éventuels <em>modificateurs</em>. <MarkLink link="https://www.aidedd.org/regles/combat/" text="PHB 189" /></p>
 
             <div className="card">
-              <h3 className="subtitle">Un Tour commence</h3>
+              <h3 className="subtitle">Un tour commence</h3>
               <div style={{paddingRight: 20}}>
                 <p className="border-bottom"><strong>Tours</strong> Tous les combattants jouent leur tour dans l'ordre de l'initiative. <MarkLink link="https://www.aidedd.org/regles/combat/" text="PHB 189"/> </p>
                 <p><strong>Répéter</strong> Répéter les rounds jusqu'à la victiore, la défaite, des pourparlers ou une retraite.</p>
               </div>
 
-              <svg style={{position: 'absolute', top: '55%', left: 'calc(100% - 35px)', transform: 'translateY(-50%)'}} width="40" viewBox="-4 -4 26 36" xmlns="http://www.w3.org/2000/svg"><path d="M19.436 18.187c-1.416 7.432-8.615 12.326-16.048 10.91l1.015-5.328c4.495.857 8.85-2.102 9.706-6.597.828-4.346-1.911-8.56-6.156-9.608a7.6 7.6 0 0 0-.443-.098l-.281 1.473-6.38-5.503L8.807.665l-.281 1.473c.149.029.299.06.444.094 7.185 1.613 11.855 8.67 10.467 15.955" fill="var(--color-gray)" strokeWidth="1" stroke="var(--color-dark-gray)"/></svg>
+              <svg style={{position: 'absolute', top: '55%', left: 'calc(100% - 35px)', transform: 'translateY(-50%)', height: '70%'}} width="40" viewBox="-4 -4 26 36" xmlns="http://www.w3.org/2000/svg"><path d="M19.436 18.187c-1.416 7.432-8.615 12.326-16.048 10.91l1.015-5.328c4.495.857 8.85-2.102 9.706-6.597.828-4.346-1.911-8.56-6.156-9.608a7.6 7.6 0 0 0-.443-.098l-.281 1.473-6.38-5.503L8.807.665l-.281 1.473c.149.029.299.06.444.094 7.185 1.613 11.855 8.67 10.467 15.955" fill="var(--color-gray)" strokeWidth="1" stroke="var(--color-dark-gray)"/></svg>
             </div>
           </div>
           <div id="concentration">
