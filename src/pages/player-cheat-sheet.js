@@ -154,7 +154,7 @@ const PlayerCheatSheet = () => {
               <span><em>Une des actions de combat suivantes:</em></span>
             </p>
             <p className="border-bottom"><strong>Attaque</strong> une ou plusieurs fois, selon les capacités. (Corps à corps, à distance ou sort d'attaque). <MarkLink text="PHP 192"/></p>
-            <p className="border-bottom"><strong>Lancer un sort</strong> Temps d'incantation d'1 round max. <MarkLink text="PHP 192"/></p>
+            <p className="border-bottom"><strong>Lancer un sort</strong> Temps d'incantation d'1 round max. <MarkLink text="PHP 201"/></p>
             <p className="border-bottom"><strong>Se précipiter</strong> Doubler sa vitesse pour le tour. <MarkLink text="PHP 192"/></p>
             <p className="border-bottom"><strong>Désarmer</strong> Jet d'attaque vs. FOR ou DEX. <Disadvantage/> si la cible tient l'objet à 2 mains. <Advantage/> pour la cible si elle est plus grande. <Disadvantage/> si elle est plus petite. <MarkLink text="DMG 271"/></p>
             <p className="border-bottom"><strong>Se désengager</strong> Se déplacer sans provoquer d'<em>Attaque d'opportunité</em>. <MarkLink text="PHP 192"/></p>
@@ -198,6 +198,7 @@ const PlayerCheatSheet = () => {
             <p><strong>Immunité</strong> 0 dégâts.</p>
             <p><strong>Résistance</strong> ½ dégâts.</p>
             <p><strong>Vulnérabilité</strong> 2 &times; dégâts.</p>
+            <p><MarkLink text="PHB 196"/></p>
           </div>
         </div>
       </div>
