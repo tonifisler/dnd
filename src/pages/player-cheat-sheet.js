@@ -106,9 +106,9 @@ const PlayerCheatSheet = () => {
             <p className="border-bottom"><strong>Attaque de sort</strong> Beaucoup de sorts comptent comme des attaques. Lancer un d20 + <em>Mod. de caractéristique d'incantation</em> + <em>Bonus de maîtrise</em> contre <em>CA</em> de la cible. <MarkLink link="https://www.aidedd.org/regles/combat/" text="PHB 205"/></p>
             <p>
               <strong>Attaque à distance</strong> Ex: <em>Arc Long (45/180)</em> <MarkLink link="https://www.aidedd.org/regles/combat/" text="PHB 149/194"/><br/>
-              ➛ 0-1.5m <em>Faire un jet <Disadvantage/></em>.<br/>
-              ➛ 1.6-45m <em>Faire un jet normal</em>.<br/>
-              ➛ 46-180m <em>Faire un jet <Disadvantage/></em>.<br/>
+              ➛ 0-1.5m <em>Faire un jet d'attaque <Disadvantage/></em>.<br/>
+              ➛ 1.6-45m <em>Faire un jet d'attaque normal</em>.<br/>
+              ➛ 46-180m <em>Faire un jet d'attaque <Disadvantage/></em>.<br/>
               ➛ 181m+ <em>Cible hors de portée</em>.
             </p>
 
