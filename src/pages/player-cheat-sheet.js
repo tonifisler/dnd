@@ -62,7 +62,7 @@ const PlayerCheatSheet = () => {
             <p className="border-bottom-lg">On détermine toujours un succès ou un échec par un jet de dé à 20 faces. Des <em>modificateurs</em> (positifs ou négatifs) peuvent s'appliquer.</p>
             <p className="border-bottom"><strong>Jet d'initiative</strong> Au début d'un combat, les personnages détermine leur ordre de combat avec un d20. <Test ability="DEX" />. <MarkLink link="https://www.aidedd.org/regles/combat/" text="PHB 189" /></p>
             <p className="border-bottom"><strong>Attaque</strong> Les attaques de corps à corps, à distance et de sort se basent sur des jets de d20. <em>Voir section "Attaque"</em>.</p>
-            <p className="border-bottom"><strong>Tests de caractéristiques</strong> Le MD peut demander à un joueur de faire un jet de d20 pour déterminer si son personnage peut faire une action. Ajouter les <em>mod. de caractéristique</em> et <em>mod. de maîtrise</em> de circonstance. <MarkLink link="https://www.aidedd.org/regles/caracteristiques/" text="PHB 174"/></p>
+            <p className="border-bottom"><strong>Tests de caractéristique</strong> Le MD peut demander à un joueur de faire un jet de d20 pour déterminer si son personnage peut faire une action. Ajouter les <em>mod. de caractéristique</em> et <em>mod. de maîtrise</em> de circonstance. <MarkLink link="https://www.aidedd.org/regles/caracteristiques/" text="PHB 174"/></p>
             <p><strong>Jets de sauvegarde</strong> Dans une situation dangereuse, le MD peut demander au joueur d'essayer d'éviter les effets avec un jet de d20. Ajouter les <em>modificateurs</em> de circonstance. <MarkLink link="https://www.aidedd.org/regles/caracteristiques/" text="PHB 179"/></p>
 
             <h3 className="subtitle"><Advantage/> Avantage & Désavantage <span title="Désavantage" className="badge-disadvantage"/></h3>
@@ -92,7 +92,7 @@ const PlayerCheatSheet = () => {
           </div>
           <div id="concentration">
             <h2 className="title">Concentration</h2>
-            <p>Certains sorts demandent de la <em>Concentration</em> pour maintenir leurs effets. Si l'incantateur prend des <em>Dégâts</em> pendant sa concentration, il doit faire un <em>Jet de sauvegarde</em> (DD 10 ou la moitié des dégâts, prendre le plus haut) pour maintenir le sort. <MarkLink text="PHB 203"/></p>
+            <p>Certains sorts demandent de la <em>Concentration</em> pour maintenir leurs effets. Si l'incantateur prend des <em>Dégâts</em> pendant sa concentration, il doit faire un <em>Jet de sauvegarde</em> (<em>DD 10</em> ou la moitié des dégâts, prendre le plus haut) pour maintenir le sort. <MarkLink text="PHB 203"/></p>
           </div>
         </div>
         <div>
@@ -113,8 +113,8 @@ const PlayerCheatSheet = () => {
             </p>
 
             <h3 className="subtitle">Abri</h3>
-            <p className="border-bottom"><strong>Abri partiel</strong> Donne <em>+2 CA</em> et <em>sauvegardes DEX</em>.</p>
-            <p className="border-bottom"><strong>Abri important</strong> Donne <em>+5 CA</em> et <em>sauvegardes DEX</em>.</p>
+            <p className="border-bottom"><strong>Abri partiel</strong> Donne <em>+2 CA</em> et <em>+2 aux JS de DEX</em>.</p>
+            <p className="border-bottom"><strong>Abri important</strong> Donne <em>+5 CA</em> et <em>+5 aux JS de DEX</em>.</p>
             <p className="border-bottom"><strong>Abri total</strong> Ne peut pas être ciblé, mais peut être touché par un <em>Effet de zone</em>. <MarkLink link="https://www.aidedd.org/regles/combat/" text="PHB 196"/></p>
 
             <h3 className="subtitle">Armes improvisées</h3>
@@ -130,7 +130,7 @@ const PlayerCheatSheet = () => {
             <p className="border-bottom"><strong>Court repos</strong> Une heure (minimum) durant laquelle les personnages peuvent se soigner en jetant les <em>Dés de vie</em> qu'ils ont à disposition. <MarkLink text="PHB 186"/></p>
             <p className="border-bottom"><strong>Long repos</strong> Une fois par jour, un repos de 8h. Tous les <em>Points de vie</em> sont récupérés et ½ du nombre de <em>Dés de vie</em> max. est restaurée (min. 1). <MarkLink text="PHB 186"/></p>
             <p className="border-bottom"><strong>Mort instantanée</strong> Si un coup réduit les points de vie à -1 &times; <em>Points de vie</em> maximum, le personnage meurt instantanément. <MarkLink text="PHB 197"/></p>
-            <p className="border-bottom"><strong>Jets de sauvegarde contre la mort</strong> Quand un personnage commence son tour avec 0 PV, il fait un jet de sauvegarde non modifié DD 10. 3 échecs font mourir le personnage. 3 succès stabilisent le personnage à 0 PV. <MarkLink text="PHB 197"/></p>
+            <p className="border-bottom"><strong>Jets de sauvegarde contre la mort</strong> Quand un personnage commence son tour avec 0 PV, il fait un jet de sauvegarde non modifié <em>DD 10</em>. 3 échecs font mourir le personnage. 3 succès stabilisent le personnage à 0 PV. <MarkLink text="PHB 197"/></p>
             <p className="border-bottom"><strong>Points de vie temporaires</strong> sont accordés par certaines capacités et certains sorts. Ils sont toujours perdus en premier. <MarkLink text="PHB 198"/></p>
             <p><strong>Assommer</strong> Lorsqu'un attaquant au corps à corps réduit sa cible à 0 PV, il peut décider de la rendre <em>Inconsciente</em> (stabilisée) au lieu de la tuer. <MarkLink text="PHB 198"/></p>
           </div>
@@ -160,14 +160,14 @@ const PlayerCheatSheet = () => {
             <p className="border-bottom"><strong>Se désengager</strong> Se déplacer sans provoquer d'<em>Attaque d'opportunité</em>. <MarkLink text="PHP 192"/></p>
             <p className="border-bottom"><strong>Esquiver</strong> les attaques pour le round. <Disadvantage/> pour les attaquants. <Advantage/> pour les jets de de DEX. <MarkLink text="PHP 192"/></p>
             <p className="border-bottom"><strong>Premiers soins</strong> Stabiliser une créature qui a 0 PV. <MarkLink text="PHP 197"/></p>
-            <p className="border-bottom"><strong>Empoigner</strong> Faire une action <em>Attaque</em> pour empoigner une créature. <em>Tests FOR (Athléthisme)</em> contre <em>FOR (Athléthisme)</em> ou <em>DEX (Acrobaties)</em>. <strong>Se libérer:</strong> 1 action, Tests <em>FOR (Athléthisme)</em> ou <em>DEX (Acrobaties)</em> contre <em>FOR (Athléthisme)</em> <strong>Déplacer:</strong> <em>Vitesse</em>/2. <MarkLink text="PHP 197"/></p>
+            <p className="border-bottom"><strong>Empoigner</strong> Faire une action <em>Attaque</em> pour empoigner une créature. <em>Test FOR (Athléthisme)</em> contre <em>FOR (Athléthisme)</em> ou <em>DEX (Acrobaties)</em>. <strong>Se libérer:</strong> 1 action, Test <em>FOR (Athléthisme)</em> ou <em>DEX (Acrobaties)</em> contre <em>FOR (Athléthisme)</em> <strong>Déplacer:</strong> <em>Vitesse</em>/2. <MarkLink text="PHP 197"/></p>
             <p className="border-bottom"><strong>Aider</strong> Un allié adjacent obtient <Advantage/> pour une action/attaque. <MarkLink text="PHP 192"/></p>
-            <p className="border-bottom"><strong>Se cacher</strong> Test de <em>Discrétion</em>. <MarkLink text="PHP 177"/></p>
+            <p className="border-bottom"><strong>Se cacher</strong> Test <em>DEX (Discrétion)</em>. <MarkLink text="PHP 177"/></p>
             <p className="border-bottom"><strong>Se tenir prêt</strong> à faire une action spécifique en <em>Réaction</em> à un événement déclencheur. <MarkLink text="PHP 193"/></p>
-            <p className="border-bottom"><strong>Chercher</strong> un objet. Peut demander un Test de <em>Perception</em> ou d'<em>Investigation</em>. <MarkLink text="PHP 192"/></p>
+            <p className="border-bottom"><strong>Chercher</strong> un objet. Peut demander un Test <em>SAG (Perception)</em> ou d'<em>Investigation</em>. <MarkLink text="PHP 192"/></p>
             <p className="border-bottom"><strong>Bousculer</strong> Utiliser une <em>Attaque</em> pour repousser une créature de 1.5m ou la faire tomber <em>à terre</em>. <MarkLink text="PHP 195"/></p>
             <p className="border-bottom"><strong>Utiliser un objet</strong> Interagir avec un objet. Peut demander un jet de dé. <MarkLink text="PHP 193"/></p>
-            <p><strong>Règles de déplacement optionelles</strong> <em>Monter sur une créature plus grande que soi</em>, <em>Désarmer autrui</em>, <em>Marquer une cible</em>, <em>Passer en force</em>, <em>Repousser de côté</em>, <em>Roulé-boulé</em>. <MarkLink text="DMG 271"/></p>
+            <p><strong>Options d'action</strong> <em>Monter sur une créature plus grande que soi</em>, <em>Marquer une cible</em>, <em>Passer en force</em>, <em>Repousser de côté</em>, <em>Roulé-boulé</em>. <MarkLink text="DMG 271"/></p>
             <p className="bg-gray d-flex" style={{alignItems: 'center'}}>
               <span style={{padding: '0 1rem', fontWeight: 900, fontSize: '1.5rem', lineHeight: 1}}>+</span>
               <span><em>Autres actions possibles dans certains cas:</em></span>
@@ -175,7 +175,7 @@ const PlayerCheatSheet = () => {
             <p className="border-bottom"><strong>Se déplacer</strong> d'une distance additionnelle (s'il reste de la <em>Vitesse</em>). <MarkLink text="PHB 181"/> </p>
             <p className="border-bottom"><strong>Action Bonus</strong> si disponible. <MarkLink text="PHB 181"/> </p>
             <p className="border-bottom-lg"><strong>Réaction</strong>, si disponible, faite instantanément, même en dehors du tour. Déclenchée par un événement. <MarkLink text="PHB 190"/> </p>
-            <p><strong>Se battre avec une arme à 2 mains</strong> Avec des armes <em>légères</em> dans chaque main, utiliser l'<em>Action Bonus</em> pour attaquer avec la 2e arme. Aucun mod. n'est appliqué sur la 2e arme. <MarkLink text="PHB 195"/> </p>
+            <p><strong>Se battre avec 2 armes</strong> Avec des armes <em>légères</em> dans chaque main, utiliser l'<em>Action Bonus</em> pour attaquer avec la 2e arme. Aucun mod. n'est appliqué sur la 2e arme. <MarkLink text="PHB 195"/> </p>
           </div>
         </div>
         <div id="damage-types" className="cols border-top-lg grid-span">
@@ -217,10 +217,10 @@ const PlayerCheatSheet = () => {
             <p className="border-bottom"><strong>Désavantage</strong> <Disadvantage/> Prendre le moins bon résultat de 2d20.</p>
             <p className="border-bottom"><strong>DMG</strong> <em>Dungeon Master's Guide</em>.</p>
             <p className="border-bottom"><strong>Effet de zone</strong> Le volume ciblé par un sort.</p>
-            <p className="border-bottom"><strong>FOR DEX CON INT SAG CHA</strong> <em>Modificateurs de caractéristique</em>. Peut être ajouté aux jets de d20 pour effectuer des <em>Tests de caractéristiques</em>.</p>
+            <p className="border-bottom"><strong>FOR DEX CON INT SAG CHA</strong> <em>Modificateurs de caractéristique</em>. Peut être ajouté aux jets de d20 pour effectuer des <em>Tests de caractéristique</em>.</p>
             <p className="border-bottom"><strong>Initiative order</strong> L'ordre dans lequel les tours personnages sont pris durant un <em>round</em>.</p>
             <p className="border-bottom"><strong>Jet d'initiative</strong> Un jet de d20+DEX qui détermine l'ordre de combat.</p>
-            <p className="border-bottom"><strong>Jet de sauvegarde</strong> Jet de d20 pour éviter un dommage non prévu ou certaines attaques magiques.</p>
+            <p className="border-bottom"><strong>Jet de sauvegarde (JS)</strong> Jet de d20 pour éviter un dommage non prévu ou certaines attaques magiques.</p>
             <p className="border-bottom"><strong>MD/MJ</strong> <em>Maître de Donjon</em>/<em>Maître de jeu</em>.</p>
             <p className="border-bottom"><strong>MM</strong> <em>Monster Manual</em>.</p>
             <p className="border-bottom"><strong>Maîtrise</strong> Bonus additionnel sur une arme ou une compétence grâce à de l'entraînement ou à l'experience.</p>
@@ -270,21 +270,21 @@ const PlayerCheatSheet = () => {
             <p className="border-bottom-lg">Les attaques de sorts, de pièges ou de monstres peuvent avoir un effet en plus des simples dégâts. Ces effets durables sont appelés les <em>États</em>. <MarkLink text="PHB 290"/></p>
 
             <p className="border-bottom"><strong>À terre</strong> Ne peut que ramper à <em>Vitesse</em>/2. Dépense ½&nbsp;<em>Vitesse</em> pour se relever. <Disadvantage/> pour jets d'attaque. Attaquants à 1.5m <Advantage/>, les autres <Disadvantage/>.</p>
-            <p className="border-bottom"><strong>Assourdi</strong> N'entend plus rien. Échoue tous les tests de perception auditive.</p>
+            <p className="border-bottom"><strong>Assourdi</strong> N'entend plus rien. Échoue tous les tests SAG (Perception) auditive.</p>
             <p className="border-bottom"><strong>Aveuglé</strong> Ne voit plus rien. <Disadvantage/> pour jets d'attaque. Attaquants <Advantage/>.</p>
             <p className="border-bottom"><strong>Charmé</strong> Ne peut pas attaquer/viser le charmeur. Le charmeur gagne <Advantage/> pour toute interaction avec.</p>
             <p className="border-bottom"><strong>Empoigné</strong> Vitesse réduite à 0. <MarkLink text="PHB 195"/> </p>
             <p className="border-bottom"><strong>Empoisonné</strong> <Disadvantage/> pour jets d'attaque et de capacités.</p>
             <p className="border-bottom"><strong>Entravé</strong> Vitesse réduite à 0. <Disadvantage/> pour jets d'attaque. Attaquants <Advantage/>.</p>
-            <p className="border-bottom"><strong>Étourdi</strong> Est <em>Neutralisé</em>, ne peut pas bouger, pas balbutie. Échoue jets de sauvegarde de FOR et DEX. Attaquants <Advantage/>.</p>
-            <p><strong>Inconscient</strong> Est <em>Neutralisé</em>, lâche tout et tombe <em>À terre</em>. Échoue jets de sauvegarde de FOR et DEX. Attaquants <Advantage/>. Attaquants à 1.5m font des attaques critiques auto.</p>
+            <p className="border-bottom"><strong>Étourdi</strong> Est <em>Neutralisé</em>, ne peut pas bouger, pas balbutie. Échoue JS de FOR et DEX. Attaquants <Advantage/>.</p>
+            <p><strong>Inconscient</strong> Est <em>Neutralisé</em>, lâche tout et tombe <em>À terre</em>. Échoue JS de FOR et DEX. Attaquants <Advantage/>. Attaquants à 1.5m font des attaques critiques auto.</p>
             <h3 className="subtitle">Autres conditions</h3>
             <p className="border-bottom"><strong>Suffocation</strong> Une créature peut retenir son souffle pendant 1+CON minutes (30 sec min). Une fois à bout de souffle, elle survit pendant 1+CON rounds avant de tomber à 0&nbsp;PV. <MarkLink text="PHB 183"/></p>
             <p>
               <strong>Épuisement</strong> 6 niveaux cumulatifs:<br/>
               <strong>1</strong> <Disadvantage/> sur tous les tests de caractéristique.<br/>
               <strong>2</strong> Vitesse réduite de moitié.<br/>
-              <strong>3</strong> <Disadvantage/> pour jets d'attaque et de sauvegarde.<br/>
+              <strong>3</strong> <Disadvantage/> pour jets d'attaque et JS.<br/>
               <strong>4</strong> Maximum de points de vie réduit de moitié.<br/>
               <strong>5</strong> Vitesse réduite à 0.<br/>
               <strong>6</strong> Mort.
@@ -345,8 +345,8 @@ const PlayerCheatSheet = () => {
               <img style={{maxWidth: 180}} src={require("./svg/mask.svg")} alt="" />
             </div>
             <h2 className="title"><small>Vision & lumière</small></h2>
-            <p className="border-bottom"><strong>Lumière vive</strong> Vision normale.</p>
-            <p className="border-bottom"><strong>Lumière faible</strong> (pénombre, brouillard léger, aube, crépuscule). Tests de Perception <Disadvantage/>.</p>
+            <p className="border-bottom"><strong>Lumière vive</strong> Visibilité normale.</p>
+            <p className="border-bottom"><strong>Lumière faible</strong> Visibilité réduite. (Pénombre, brouillard léger, aube, crépuscule). Test de SAG (Perception) <Disadvantage/>.</p>
             <p className="border-bottom-lg"><strong>Ténèbres</strong> Visibilité nulle. (Obscurité totale, brouillard épais, végétation dense). Les créatures sont considérées comme <em>Aveuglées</em>.</p>
             <p className="border-bottom"><strong>Vision dans le noir</strong> Lumière faible = lumière vive, Ténèbres = lumière faible et ne distingue pas les couleurs.</p>
             <p className="border-bottom"><strong>Vision parfaite</strong> Voit tout, dans toute luminosité. Voit aussi les créatures/objets invisibles, les illusions, le plan éthéré, etc.</p>
