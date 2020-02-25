@@ -10,6 +10,9 @@ const IndexPage = () => (
       <li>
         <Link to="/player-cheat-sheet/">Player Cheat Sheet</Link>
       </li>
+      <li>
+        <Link to="/simpler-cheat-sheet">Simpler Cheat Sheet</Link>
+      </li>
     </ul>
   </Layout>
 )

@@ -1,0 +1,481 @@
+{
+  "actions": [
+    {
+      "title": "Attaquer",
+      "icon": "crossed-swords",
+      "description": "Au corps à corps, à distance ou sort d'attaque"
+    },
+    {
+      "title": "Empoigner",
+      "icon": "grab",
+      "description": "Faire une attaque vs FOR (Athlétisme) ou DEX (Acrobatie)"
+    },
+    {
+      "title": "Bousculer",
+      "icon": "hand",
+      "description": "FOR (Athlétisme) vs FOR (Athlétisme) ou DEX (Acrobatie) pour repousser de 1.5m ou faire tomber à terre"
+    },
+    {
+      "title": "Lancer un sort",
+      "icon": "magic-swirl",
+      "description": "Temps d'incantaction d'une action"
+    },
+    {
+      "title": "Se précipiter",
+      "icon": "sprint",
+      "description": "Doubler sa vitesse pour le tour"
+    },
+    {
+      "title": "Se désengager",
+      "icon": "journey",
+      "description": "Se déplacer sans provoquer d'attaque d'opportunité"
+    },
+    {
+      "title": "Esquiver",
+      "icon": "aura",
+      "description": "{@Disadvantage} pour les attaquants; {@Advantage} pour les jets de sauvegarde de DEX"
+    },
+    {
+      "title": "Se libérer d'une empoignade",
+      "icon": "manacles",
+      "description": "FOR (Athlétisme) ou DEX (Acrobatie) vs FOR (Athlétisme)"
+    },
+    {
+      "title": "Aider",
+      "icon": "telepathy",
+      "description": "Donner un {@Advantage} à un allié"
+    },
+    {
+      "title": "Utiliser un objet",
+      "icon": "snatch",
+      "description": "Interagir avec un objet"
+    },
+    {
+      "title": "Équiper un bouclier",
+      "icon": "round-shield",
+      "description": "Équiper ou retirer un bouclier"
+    },
+    {
+      "title": "Désarmer",
+      "icon": "drop-weapon",
+      "description": "Jet d'attaque vs FOR (Athlétisme) ou DEX (Acrobatie); {@Disadvantage} si la cible tient l'objet à 2 mains; {@Advantage} pour cible plus grande, {@Disadvantage} pour cible plus petite"
+    },
+    {
+      "title": "Se cacher",
+      "icon": "hood",
+      "description": "Test de DEX (Discrétion)"
+    },
+    {
+      "title": "Chercher",
+      "icon": "magnifying-glass",
+      "description": "Faire un test de SAG (Perception) ou INT (Investigaction)"
+    },
+    {
+      "title": "Se tenir prêt",
+      "icon": "stopwatch",
+      "description": "Choisir un déclencheur et une action en réaction"
+    },
+    {
+      "title": "Utiliser un pouvoir spécial",
+      "icon": "embrassed-energy",
+      "description": "Utiliser une capacité de classe ou de race qui demande une action"
+    },
+    {
+      "title": "Stabiliser une créature",
+      "icon": "first-aid",
+      "description": "Test de SAG (Médecine) sur une créature qui a 0 point de vie"
+    },
+    {
+      "title": "Improviser",
+      "icon": "juggler",
+      "description": "Effectuer n'importe quelle action que vous imaginez"
+    }
+  ],
+  "bonus_actions": [
+    {
+      "title": "Attaquer avec votre arme secondaire",
+      "icon": "crossed-swords",
+      "description": "Sans bonus aux dégâts (sauf si négatif)"
+    },
+    {
+      "title": "Lancer un sort",
+      "icon": "magic-swirl",
+      "description": "Temps d'incantaction d'une action bonus"
+    },
+    {
+      "title": "Utiliser un pouvoir spécial",
+      "icon": "embrassed-energy",
+      "description": "Temps d'incantaction d'une action bonus"
+    }
+  ],
+  "conditions": [
+    {
+      "title": "À terre",
+      "icon": "crawl",
+      "bullets": [
+        "Doit ramper ou se relever",
+        "{@Disadvantage} aux jets d'attaque",
+        "{@Advantage} aux jets d'attaque contre la créature à 1.5m, {@Disadvantage} plus loin"
+      ]
+    },
+    {
+      "title": "Assourdi",
+      "icon": "elf-ear",
+      "bullets": [
+        "Rate les tests de perception basés sur l'ouïe"
+      ]
+    },
+    {
+      "title": "Aveuglé",
+      "icon": "one-eyed",
+      "bullets": [
+        "Rate les tests de perception basés sur la vue",
+        "{@Disadvantage} aux jets d'attaque",
+        "{@Advantage} aux jets d'attaque contre la créature"
+      ]
+    },
+    {
+      "title": "Charmé",
+      "icon": "smitten",
+      "bullets": [
+        "Ne peut pas attaquer le charmeur",
+        "{@Advantage} pour le charmeur lors d'une interaction sociale avec la créature"
+      ]
+    },
+    {
+      "title": "Empoigné",
+      "icon": "grab",
+      "bullets": [
+        "Vitesse réduite à 0"
+      ]
+    },
+    {
+      "title": "Empoisonné",
+      "icon": "poison-bottle",
+      "bullets": [
+        "{@Disadvantage} aux jets d'attaque et de caractéristique"
+      ]
+    },
+    {
+      "title": "Entravé",
+      "icon": "imprisoned",
+      "bullets": [
+        "Vitesse réduite à 0",
+        "{@Disadvantage} aux jets d'attaque et jets de sauvegarde de DEX",
+        "{@Advantage} aux jets d'attaque contre la créature"
+      ]
+    },
+    {
+      "title": "Étourdi",
+      "icon": "surprised",
+      "bullets": [
+        "Neutralisé, ne peut pas se déplacer et parle en balbutiant",
+        "Rate les jets de sauvegarde de FOR et DEX",
+        "{@Advantage} aux jets d'attaque contre la créature"
+      ]
+    },
+    {
+      "title": "Inconscient",
+      "icon": "coma",
+      "bullets": [
+        "Neutralisé, ne peut pas se déplacer, parler et n'a pas conscience de ce qui l'entoure",
+        "La créature lâche tout ce qu'elle tenait et tombe à terre",
+        "Rate les jets sauvegarde de FOR et DEX",
+        "{@Advantage} aux jets d'attaque contre la créature",
+        "Une attaque à 1.5m qui touche est un coup critique"
+      ]
+    },
+    {
+      "title": "Invisible",
+      "icon": "invisible",
+      "bullets": [
+        "Impossible de voir la créature (on peut l'entendre ou voir ses traces)",
+        "{@Advantage} aux jets d'attaque",
+        "{@Disadvantage} aux jets d'attaque contre la créature"
+      ]
+    },
+    {
+      "title": "Neutralisé",
+      "icon": "internal-injury",
+      "bullets": [
+        "Ne peut pas faire d'actions ou de réactions"
+      ]
+    },
+    {
+      "title": "Paralysé",
+      "icon": "cancel",
+      "bullets": [
+        "Neutralisé, ne peut pas se déplacer ou parler",
+        "Rate les jets de sauvegarde de FOR et DEX",
+        "{@Advantage} aux jets d'attaque contre la créature",
+        "Une attaque à 1.5m qui touche est un coup critique"
+      ]
+    },
+    {
+      "title": "Pétrifié",
+      "icon": "ammonite-fossil",
+      "bullets": [
+        "Transformé en substance solide inanimée (pierre), poids ⨉ 10, ne vieillit plus",
+        "Neutralisé, ne peut ni parler, ni se déplacer et n'est plus consciente de ce qui l'entoure",
+        "{@Advantage} aux jets d'attaque contre la créature",
+        "Rate les jets de sauvegarde de FOR et DEX",
+        "Résistant à tous les dégâts",
+        "Immunisé contre le poison et les maladies"
+      ]
+    },
+    {
+      "title": "Terrorisé",
+      "icon": "screaming",
+      "bullets": [
+        "{@Disadvantage} aux jets de caractéristique et d'attaque tant que la source de la frayeur est en vue",
+        "Ne peut pas se rapprocher de la source de la frayeur"
+      ]
+    },
+    {
+      "title": "Mourant",
+      "icon": "dead-head",
+      "bullets": [
+        "Inconscient",
+        "Redevient conscient en recevant des soins",
+        "Jet de sauvegarde contre la mort DD 10 pour se stabiliser",
+        "Une fois stabilisé, la créature gagne 1 point de vie après 1d4 heures"
+      ]
+    },
+    {
+      "title": "Épuisement",
+      "icon": "back-pain",
+      "table": [
+        [
+          "1",
+          "{@Disadvantage} lors des tests de caractéristique"
+        ],
+        [
+          "2",
+          "Vitesse réduite de moitié"
+        ],
+        [
+          "3",
+          "{@Disadvantage} lors des jets d'attaque et de sauvegarde"
+        ],
+        [
+          "4",
+          "Maximum de points de vie réduits de moitié"
+        ],
+        [
+          "5",
+          "Vitesse réduite à 0"
+        ],
+        [
+          "6",
+          "Décès"
+        ]
+      ]
+    }
+  ],
+  "environments": [
+    {
+      "title": "Lightly obscured",
+      "icon": "bleeding-eye",
+      "subtitle": "Disadvantage on Perception",
+      "description": "Dim light, patchy fog, moderate foliage",
+      "reference": "PHB, pg. 183.",
+      "bullets": [
+        "Creatures have <b>disadvantage on Wisdom (Perception)</b> checks that rely on sight."
+      ]
+    },
+    {
+      "title": "Heavily obscured",
+      "icon": "lightning-tear",
+      "subtitle": "Effectively blind",
+      "description": "Darkness, opaque fog, dense foliage",
+      "reference": "PHB, pg. 183.",
+      "bullets": [
+        "A creature in a heavily obscured area effectively suffers from the <b>blinded condition</b>."
+      ]
+    }
+  ],
+  "environments_light": [
+    {
+      "title": "Bright light",
+      "icon": "star-pupil",
+      "subtitle": "Normal vision",
+      "description": "Bright light lets most creatures see normally",
+      "reference": "PHB, pg. 183.",
+      "bullets": [
+        "Gloomy days still provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius."
+      ]
+    },
+    {
+      "title": "Dim light",
+      "icon": "semi-closed-eye",
+      "subtitle": "Lightly obscured",
+      "description": "Dim light, also called shadows",
+      "reference": "PHB, pg. 183.",
+      "bullets": [
+        "Creates a <b>lightly obscured</b> area.",
+        "An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness.",
+        "The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light."
+      ]
+    },
+    {
+      "title": "Darkness",
+      "icon": "worried-eyes",
+      "subtitle": "Heavily obscured",
+      "description": "Darkness creates a heavily obscured area",
+      "reference": "PHB, pg. 183.",
+      "bullets": [
+        "Creates a <b>heavily obscured</b> area.",
+        "Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness."
+      ]
+    }
+  ],
+  "environments_vision": [
+    {
+      "title": "Blindsight",
+      "icon": "one-eyed",
+      "subtitle": "Perceive without sight",
+      "description": "Perceive your surroundings without relying on sight, within a certain radius",
+      "reference": "PHB, pg. 183.",
+      "bullets": [
+        "Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense."
+      ]
+    },
+    {
+      "title": "Darkvision",
+      "icon": "semi-closed-eye",
+      "subtitle": "Limited vision in darkness",
+      "description": "A creature with Darkvision can see better in the dark or low light conditions, within a certain radius",
+      "reference": "PHB, pgs. 183-184.",
+      "bullets": [
+        "Within a specified range, a creature with darkvision can <b>see in darkness as if the darkness were dim light</b>, so areas of darkness are only lightly obscured as far as that creature is concerned.",
+        "However, the creature can’t discern color in darkness, only shades of gray.",
+        "Many creatures in the worlds of D&D, especially those that dwell underground, have darkvision."
+      ]
+    },
+    {
+      "title": "Truesight",
+      "icon": "eye-shield",
+      "subtitle": "See in darkness",
+      "description": "A creature with truesight can see everything in its true form, independent of the environment",
+      "reference": "PHB, pg. 184.",
+      "bullets": [
+        "A creature with truesight can, out to a specific range, see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a shapechanger or a creature that is transformed by magic.",
+        "Furthermore, the creature can see into the Ethereal Plane."
+      ]
+    }
+  ],
+  "environments_cover": [
+    {
+      "title": "Half cover",
+      "icon": "broken-shield",
+      "subtitle": "Low wall, furniture, creatures",
+      "description": "A target has half cover if an obstacle blocks at least half of its body",
+      "reference": "PHB, pg. 196.",
+      "bullets": [
+        "The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.",
+        "A target with half cover has a <b>+2 bonus to AC and Dexterity saving throws</b>.",
+        " If a target is behind multiple sources of cover, only the most protective degree of cover applies"
+      ]
+    },
+    {
+      "title": "Three-quarters cover",
+      "icon": "cracked-shield",
+      "subtitle": "Portcullis, arrow slit",
+      "description": "A target has three-quarters cover if about three-quarters of it is covered by an obstacle",
+      "reference": "PHB, pg. 196.",
+      "bullets": [
+        "The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.",
+        "A target with three-quarters cover has a <b>+5 bonus to AC and Dexterity saving throws</b>.",
+        " If a target is behind multiple sources of cover, only the most protective degree of cover applies"
+      ]
+    },
+    {
+      "title": "Full cover",
+      "icon": "shield",
+      "subtitle": "Completely concealed",
+      "description": "A target has total cover if it is completely concealed by an obstacle",
+      "reference": "PHB, pg. 196.",
+      "bullets": [
+        "A target with total cover <b>can’t be targeted directly</b> by an attack or a spell, although some spells can reach such a target by including it in an area of effect.",
+        "If a target is behind multiple sources of cover, only the most protective degree of cover applies"
+      ]
+    }
+  ],
+  "movements": [
+    {
+      "title": "Se déplacer",
+      "icon": "run",
+      "description": "Coûte 1m pour 1m déplacé"
+    },
+    {
+      "title": "Escalader",
+      "icon": "crags",
+      "description": "Coûte 2m pour 1m escaladé"
+    },
+    {
+      "title": "Nager",
+      "icon": "at-sea",
+      "description": "Coûte 2m pour 1m nagé"
+    },
+    {
+      "title": "Se jeter à terre",
+      "icon": "falling",
+      "description": "Coûte 0m (gratuit)"
+    },
+    {
+      "title": "Ramper",
+      "icon": "crawl",
+      "description": "Coûte 2m pour 1m rampé"
+    },
+    {
+      "title": "Se relever",
+      "icon": "strong",
+      "description": "Coûte la moitié de la vitesse totale"
+    },
+    {
+      "title": "Saut en hauteur",
+      "icon": "kangaroo",
+      "description": "Coût normal, max 1 + (mod. FOR / 3) mètres, moitié sans 3m d'élan"
+    },
+    {
+      "title": "Saut en longueur",
+      "icon": "jump-across",
+      "description": "Coût normal, max (mod. FOR / 3) mètres, moitié sans 3m d'élan"
+    },
+    {
+      "title": "Improviser",
+      "icon": "juggler",
+      "description": "Effectuer n'importe quel acrobatie que vous imaginez"
+    },
+    {
+      "title": "Terrain difficile",
+      "icon": "stone-pile",
+      "description": "Ajoute +1m pour 1m dépensé"
+    },
+    {
+      "title": "Déplacer une créature empoignée",
+      "icon": "grab",
+      "description": "Vitesse divisée par 2"
+    }
+  ],
+  "reactions": [
+    {
+      "title": "Attaque d'opportunité",
+      "icon": "crossed-swords",
+      "description": "Attaque de corps à corps contre une créature qui quitte votre zone d'allonge",
+      "reference": "PHB 195"
+    },
+    {
+      "title": "Action préparée",
+      "icon": "stopwatch",
+      "description": "Effectuer l'action définie par l'action \"Se tenir prêt\"",
+      "reference": "PHB 193"
+    },
+    {
+      "title": "Lancer un sort",
+      "icon": "magic-swirl",
+      "description": "Temps d'incantaction d'une réaction",
+      "reference": "PHB 192"
+    }
+  ]
+}

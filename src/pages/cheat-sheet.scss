@@ -248,3 +248,92 @@ td {
   display: table;
   clear: both;
 }
+
+.cheat-item {
+  display: grid;
+  grid-template:
+    "icon title" auto
+    "icon description" 1fr
+    / auto 1fr;
+  grid-column-gap: 0.5rem;
+  color: var(--color);
+  fill: var(--color);
+  margin-bottom: 1rem;
+  break-inside: avoid;
+  padding-top: 0.2em;
+
+  .icon {
+    grid-area: icon;
+    border-radius: 4px;
+  }
+
+  h3 {
+    grid-area: title;
+    margin: -0.45rem 0 0 0;
+    font-size: 1.2rem;
+  }
+
+  p {
+    grid-area: description;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  ul {
+    grid-area: description;
+  }
+
+  [class*=badge] {
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 0.8em;
+    font-family: inherit;
+    font-weight: bold;
+  }
+
+  li {
+    font-size: 0.8rem;
+
+    [class*=badge] {
+      font-size: 0.6em;
+    }
+  }
+}
+
+.cheat-card {
+  border: 5px solid var(--color);
+  background-color: var(--color);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+
+  h2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+.cheat-card-content {
+  columns: 2;
+  column-gap: 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  .simpler-cheat {
+    columns: 2;
+    column-gap: 1rem;
+  }
+}
